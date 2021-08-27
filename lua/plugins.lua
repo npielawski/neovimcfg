@@ -30,6 +30,9 @@ return require('packer').startup(function()
     use {'ms-jpq/coq_nvim', branch = 'coq'} -- main one
     use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
 
+    -- Python prettifier
+    use 'psf/black'
+
     -- Commenting functions
     use 'preservim/nerdcommenter'
 

@@ -28,5 +28,5 @@ require('neoscroll').setup()
 
 local lsp = require('lspconfig')
 local coq = require('coq')
-lsp.pylsp.setup{coq.lsp_ensure_capabilities()}
+lsp.pyright.setup{coq.lsp_ensure_capabilities()}
 

@@ -1,3 +1,6 @@
+-- Configuration
+vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
+
 -- Preferences
 vim.opt.ignorecase     = true -- Ignores the case when typing commands
 vim.opt.wrap           = false -- Wraps the lines
@@ -11,7 +14,7 @@ vim.opt.confirm        = true -- Ask if you want to save when quitting
 vim.opt.whichwrap:append('<>hl[]') -- Allows some chars to change line
 vim.opt.list           = true -- Makes some characters visible
 vim.opt.listchars      = 'trail:•' -- Makes trailing spaces visible
-vim.opt.colorcolumn    = '80' -- Adds a shaded ruler to limit line length
+vim.opt.colorcolumn    = '88' -- Adds a shaded ruler to limit line length
 -- Managing <Tab>
 vim.opt.tabstop        = 4 -- Number of spaces a <Tab> counts for
 vim.opt.shiftwidth     = 4 -- Number of spaces to use for (auto)indent
@@ -26,3 +29,4 @@ vim.g.indentLine_color_gui = '#444444'
 -- Disable indenting in CHADTree and help
 -- See: https://github.com/Yggdroot/indentLine/issues/335
 vim.g.indentLine_fileTypeExclude = {'CHADTree', 'help'}
+
