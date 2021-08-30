@@ -1,4 +1,3 @@
-vim.g.mapleader = ' '
 -- Mappings
 local vimp = require('vimp')
 vimp.imap('jj', '<Esc>')
@@ -12,6 +11,8 @@ vimp.noremap('<left>', '<nop>')
 vimp.noremap('<right>', '<nop>')
 -- ChadTree
 vimp.nnoremap('<C-t>', '<cmd>CHADopen<CR>')
+-- UndoTree
+vimp.noremap('<Leader>t', '<cmd>UndotreeToggle<CR><cmd>UndotreeFocus<CR>')
 -- Python
 vimp.map('<Leader>b', ':Black<CR>')
 vimp.map('<Leader>r', ':w<CR>:!poetry run python3 %<CR>')

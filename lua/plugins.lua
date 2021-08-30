@@ -39,6 +39,9 @@ return require('packer').startup(function()
     -- Shortcuts in Lua
     use 'svermeulen/vimpeccable'
 
+    -- Plugin to visualize the undo tree
+    use 'mbbill/undotree'
+
     -- Icons (must be loaded last!)
     use 'ryanoasis/vim-devicons'
 end)

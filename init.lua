@@ -1,3 +1,5 @@
+vim.g.mapleader = ' '
+
 -- Load the plugins
 require('plugins')
 
@@ -28,5 +30,5 @@ require('neoscroll').setup()
 
 local lsp = require('lspconfig')
 local coq = require('coq')
-lsp.pyright.setup{coq.lsp_ensure_capabilities()}
+lsp.pyright.setup(coq.lsp_ensure_capabilities{})
 

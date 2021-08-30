@@ -15,6 +15,8 @@ vim.opt.whichwrap:append('<>hl[]') -- Allows some chars to change line
 vim.opt.list           = true -- Makes some characters visible
 vim.opt.listchars      = 'trail:•' -- Makes trailing spaces visible
 vim.opt.colorcolumn    = '88' -- Adds a shaded ruler to limit line length
+vim.opt.undofile       = true -- Saves undos/redos in a file after closing nvim
+vim.opt.undolevels     = 10000 -- Number of undos/redos saved
 -- Managing <Tab>
 vim.opt.tabstop        = 4 -- Number of spaces a <Tab> counts for
 vim.opt.shiftwidth     = 4 -- Number of spaces to use for (auto)indent
