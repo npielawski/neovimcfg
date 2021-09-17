@@ -11,7 +11,7 @@ return require('packer').startup(function()
     use 'ajmwagar/vim-deus'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
-    use {'enricobacis/vim-airline-clock', event = 'VimEnter'}
+    use 'enricobacis/vim-airline-clock'
 
     -- Ident guides
     use {'Yggdroot/indentLine', event = 'BufEnter'}
@@ -26,12 +26,21 @@ return require('packer').startup(function()
     use {'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'}
 
     -- Code completion
-    use {'neovim/nvim-lspconfig', ft = {'py'}}
-    use {'ms-jpq/coq_nvim', branch = 'coq', ft = {'py'}} -- main one
-    use {'ms-jpq/coq.artifacts', branch = 'artifacts', ft = {'py'}} -- 9000+ Snippets
+    use {'neovim/nvim-lspconfig'}
+    use {'ms-jpq/coq_nvim', branch = 'coq'} -- main one
+    use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
+    -- Lua
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {
+            }
+        end
+    }
 
     -- Python prettifier
-    use {'psf/black', ft = {'py'}}
+    use {'psf/black'}
 
     -- Commenting functions
     use 'preservim/nerdcommenter'
@@ -41,6 +50,14 @@ return require('packer').startup(function()
 
     -- Plugin to visualize the undo tree
     use 'mbbill/undotree'
+
+    -- Fuzzy finder
+    use {'junegunn/fzf', run = 'fzf#install()' }
+    use 'junegunn/fzf.vim'
+    use 'gfanto/fzf-lsp.nvim'
+
+    -- Code inspector
+    use 'puremourning/vimspector'
 
     -- Icons (must be loaded last!)
     use 'ryanoasis/vim-devicons'

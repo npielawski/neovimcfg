@@ -32,3 +32,8 @@ for type, icon in pairs(signs) do
     local hl = 'LspDiagnosticsSign' .. type
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
 end
+
+-- Vimspector
+vim.g.vimspector_enable_mappings = 'HUMAN'
+vim.g.vimspector_install_gadgets = { 'debugpy' }
+
