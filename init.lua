@@ -13,7 +13,9 @@ vim.cmd('colorscheme deus')
 vim.cmd('syntax enable')
 vim.g.deus_termcolors = 256
 -- Sets up airline
-vim.g.airline_powerline_fonts = 1
+vim.g['airline#extensions#tabline#enabled'] = true
+vim.g['airline#extensions#tabline#show_buffers'] = false
+vim.g.airline_powerline_fonts = true
 vim.g.airline_mode_map = {
     i = 'INSERT',
     ic= 'INSERT'
