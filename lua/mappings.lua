@@ -2,7 +2,6 @@
 local vimp = require('vimp')
 vimp.imap('jj', '<Esc>')
 vimp.imap('jk', '<Esc>')
-vimp.imap('kj', '<Esc>')
 --vimp.nnoremap(':', ';')
 --vimp.nnoremap(';', ':')
 vimp.noremap('<up>', '<C-W><Up>')
