@@ -7,7 +7,7 @@ vim.opt.wrap           = false -- Wraps the lines
 vim.opt.mouse          = 'n' -- Mouse support enabled in n mode
 vim.opt.number         = true -- Show the line number at cursor
 vim.opt.relativenumber = true -- Show the relative lines around cursor
-vim.opt.clipboard:append('unnamedplus') -- Use system clipboard
+--vim.opt.clipboard:append('unnamedplus') -- Use system clipboard
 vim.opt.pumblend       = 15 -- Adds transparency to the popup [0, 100]
 vim.opt.cursorline     = true -- Shades the line of the cursor
 vim.opt.confirm        = true -- Ask if you want to save when quitting
