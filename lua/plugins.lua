@@ -29,7 +29,8 @@ return require('packer').startup(function()
     use {'neovim/nvim-lspconfig'}
     use {'ms-jpq/coq_nvim', branch = 'coq'} -- main one
     use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
-    -- Lua
+
+    -- Diagnostics
     use {
         "folke/trouble.nvim",
         requires = "kyazdani42/nvim-web-devicons",
@@ -58,6 +59,9 @@ return require('packer').startup(function()
 
     -- Code inspector
     use 'puremourning/vimspector'
+
+    -- Code testing shortcuts
+    use 'vim-test/vim-test'
 
     -- Icons (must be loaded last!)
     use 'ryanoasis/vim-devicons'
