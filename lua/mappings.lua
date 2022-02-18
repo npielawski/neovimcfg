@@ -40,6 +40,7 @@ vimp.nnoremap({"silent"}, "<leader>xq", "<cmd>TroubleToggle quickfix<cr>")
 vimp.nnoremap({"silent"}, "gR", "<cmd>TroubleToggle lsp_references<cr>")
 
 -- Vim Test
+vimp.nmap({"silent"}, "<leader>tt", "<cmd>TestNearest<cr>")
 vimp.nmap({"silent"}, "<leader>tn", "<cmd>TestNearest<cr>")
 vimp.nmap({"silent"}, "<leader>tf", "<cmd>TestFile<cr>")
 vimp.nmap({"silent"}, "<leader>ts", "<cmd>TestSuite<cr>")
