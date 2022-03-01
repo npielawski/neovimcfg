@@ -30,7 +30,12 @@ require('plugincfg')
 -- Scripts initialization
 require('neoscroll').setup()
 
-local lsp = require('lspconfig')
+local lspconfig = require('lspconfig')
 local coq = require('coq')
-lsp.pyright.setup(coq.lsp_ensure_capabilities{})
---require("julius_coq")
+
+local servers = { 'clangd', 'rust_analyzer', 'pyright' }
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
+    -- on_attach = my_custom_on_attach,
+  }))
+end

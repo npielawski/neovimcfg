@@ -27,8 +27,9 @@ return require('packer').startup(function()
 
     -- Code completion
     use {'neovim/nvim-lspconfig'}
-    use {'ms-jpq/coq_nvim', branch = 'coq'} -- main one
+    use {'ms-jpq/coq_nvim', branch = 'coq', run = 'python3 -m coq deps'} -- main one
     use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
+    use 'ms-jpq/coq.thirdparty'
 
     -- Diagnostics
     use {
