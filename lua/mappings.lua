@@ -22,6 +22,7 @@ vimp.map('<Leader>b', ':Black<cr>')
 vimp.map('<Leader>r', ':w<cr>:!poetry run python3 %<cr>')
 
 -- fzf
+vimp.nnoremap('<Leader>f', '<cmd>Files<cr>')
 vimp.nnoremap('<Leader>f', '<cmd>GFiles<cr>')
 vimp.nnoremap('<Leader>l', '<cmd>Lines<cr>')
 
