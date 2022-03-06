@@ -13,7 +13,7 @@ vimp.noremap('<right>', '<C-W><Right>')
 vimp.tnoremap('<Esc>', '<C-\\><C-n>')
 
 -- ChadTree
-vimp.nnoremap('<C-t>', '<cmd>CHADopen<cr>')
+vimp.nnoremap('<leader>c', '<cmd>CHADopen<cr>')
 
 -- UndoTree
 vimp.noremap('<Leader>u', '<cmd>UndotreeToggle<cr><cmd>UndotreeFocus<cr>')
