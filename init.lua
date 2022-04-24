@@ -20,6 +20,7 @@ vim.g.airline_mode_map = {
     i = 'INSERT',
     ic= 'INSERT'
 }
+vim.cmd('set laststatus=3')
 
 -- Loading the lua configuration files
 require('mappings')

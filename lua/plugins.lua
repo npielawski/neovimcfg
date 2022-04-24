@@ -23,7 +23,7 @@ return require('packer').startup(function()
     use {'tpope/vim-fugitive', cmd = {'Git'}}
 
     -- File explorer
-    use {'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'}
+    --use {'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'}
 
     -- Code completion
     use {'neovim/nvim-lspconfig'}
@@ -59,7 +59,7 @@ return require('packer').startup(function()
     use 'gfanto/fzf-lsp.nvim'
 
     -- Code inspector
-    use 'puremourning/vimspector'
+    --use 'puremourning/vimspector'
 
     -- Code testing shortcuts
     use 'vim-test/vim-test'

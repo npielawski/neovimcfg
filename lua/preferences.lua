@@ -31,5 +31,5 @@ vim.g.indentLine_setColors = 1
 vim.g.indentLine_color_gui = '#444444'
 -- Disable indenting in CHADTree and help
 -- See: https://github.com/Yggdroot/indentLine/issues/335
-vim.g.indentLine_fileTypeExclude = {'CHADTree', 'help'}
+--vim.g.indentLine_fileTypeExclude = {'CHADTree', 'help'}
 
