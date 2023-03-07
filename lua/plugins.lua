@@ -8,7 +8,8 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     -- Theme
-    use 'ajmwagar/vim-deus'
+    --use 'ajmwagar/vim-deus'
+    use { 'catppuccin/nvim', as = 'catppuccin' }
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     use 'enricobacis/vim-airline-clock'
@@ -20,7 +21,7 @@ return require('packer').startup(function()
     use 'karb94/neoscroll.nvim'
 
     -- Git
-    use {'tpope/vim-fugitive', cmd = {'Git'}}
+    --use {'tpope/vim-fugitive', cmd = {'Git'}}
 
     -- File explorer
     --use {'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'}
@@ -29,20 +30,20 @@ return require('packer').startup(function()
     use {'neovim/nvim-lspconfig'}
     use {'ms-jpq/coq_nvim', branch = 'coq', run = 'python3 -m coq deps'} -- main one
     use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
-    use 'ms-jpq/coq.thirdparty'
+    use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
     -- Diagnostics
     use {
-        "folke/trouble.nvim",
-        requires = "kyazdani42/nvim-web-devicons",
+        'folke/trouble.nvim',
+        requires = 'kyazdani42/nvim-web-devicons',
         config = function()
-            require("trouble").setup {
+            require('trouble').setup {
             }
         end
     }
 
     -- Python prettifier
-    use {'psf/black'}
+    --use {'psf/black'}
 
     -- Commenting functions
     use 'preservim/nerdcommenter'
@@ -62,7 +63,7 @@ return require('packer').startup(function()
     --use 'puremourning/vimspector'
 
     -- Code testing shortcuts
-    use 'vim-test/vim-test'
+    --use 'vim-test/vim-test'
 
     -- Icons (must be loaded last!)
     use 'ryanoasis/vim-devicons'

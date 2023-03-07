@@ -1,9 +1,7 @@
 -- Mappings
 local vimp = require('vimp')
-vimp.imap('jj', '<Esc>')
-vimp.imap('jk', '<Esc>')
-vimp.tmap('jj', '<Esc>')
-vimp.tmap('jk', '<Esc>')
+vimp.noremap('<C-C>', '<Esc>')
+vimp.inoremap('<C-C>', '<Esc>')
 --vimp.nnoremap(':', ';')
 --vimp.nnoremap(';', ':')
 vimp.noremap('<up>', '<C-W><Up>')
@@ -34,8 +32,8 @@ vimp.xmap('<Leader>di', '<Plug>VimspectorBalloonEval')
 
 -- Trouble
 vimp.nnoremap({"silent"}, "<leader>xx", "<cmd>TroubleToggle<cr>")
-vimp.nnoremap({"silent"}, "<leader>xw", "<cmd>TroubleToggle lsp_workspace_diagnostics<cr>")
-vimp.nnoremap({"silent"}, "<leader>xd", "<cmd>TroubleToggle lsp_document_diagnostics<cr>")
+vimp.nnoremap({"silent"}, "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>")
+vimp.nnoremap({"silent"}, "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>")
 vimp.nnoremap({"silent"}, "<leader>xl", "<cmd>TroubleToggle loclist<cr>")
 vimp.nnoremap({"silent"}, "<leader>xq", "<cmd>TroubleToggle quickfix<cr>")
 vimp.nnoremap({"silent"}, "gR", "<cmd>TroubleToggle lsp_references<cr>")
