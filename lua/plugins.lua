@@ -8,7 +8,6 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     -- Theme
-    --use 'ajmwagar/vim-deus'
     use { 'catppuccin/nvim', as = 'catppuccin' }
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
@@ -16,21 +15,6 @@ return require('packer').startup(function()
 
     -- Ident guides
     use {'Yggdroot/indentLine', event = 'BufEnter'}
-
-    -- Smooth scrolling
-    use 'karb94/neoscroll.nvim'
-
-    -- Git
-    --use {'tpope/vim-fugitive', cmd = {'Git'}}
-
-    -- File explorer
-    --use {'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'}
-
-    -- Code completion
-    use {'neovim/nvim-lspconfig'}
-    use {'ms-jpq/coq_nvim', branch = 'coq', run = 'python3 -m coq deps'} -- main one
-    use {'ms-jpq/coq.artifacts', branch = 'artifacts'} -- 9000+ Snippets
-    use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
     -- Diagnostics
     use {
@@ -41,9 +25,6 @@ return require('packer').startup(function()
             }
         end
     }
-
-    -- Python prettifier
-    --use {'psf/black'}
 
     -- Commenting functions
     use 'preservim/nerdcommenter'
@@ -59,12 +40,12 @@ return require('packer').startup(function()
     use 'junegunn/fzf.vim'
     use 'gfanto/fzf-lsp.nvim'
 
-    -- Code inspector
-    --use 'puremourning/vimspector'
-
-    -- Code testing shortcuts
-    --use 'vim-test/vim-test'
+    -- Typst support
+    use {'kaarmu/typst.vim', ft = {'typ'}}
 
     -- Icons (must be loaded last!)
     use 'ryanoasis/vim-devicons'
+
+    -- Copilot
+    use 'github/copilot.vim'
 end)
